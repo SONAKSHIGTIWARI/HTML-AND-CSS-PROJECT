@@ -1,0 +1,173 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito';
+    background-color:#f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color:#fff;
+    border-bottom: 2px solid #ddd;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c0392b;
+    text-shadow: 2px 2px 5px gray;
+}
+
+header nav ul {
+
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #c0392b;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background: linear-gradient(to right, #fff, #f7f7f7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.thali{
+    border-radius: 5%;
+}
+
+.thali img {
+    border-radius: 30%;
+    text-align:center;
+    font-weight: bold;
+    font-style: italic;
+    background-color: #333;
+    width: 50%;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+
+.thali img:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
+
+.details {
+    margin-left: 30px;
+}
+
+.details h1 {
+    font-size: 48px;
+    color: #c0392b;
+    animation: fadeIn 1s ease-in;
+    text-shadow: 2px 2px 7px blueviolet;
+}
+
+.details p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #000;
+}
+
+.price span {
+    font-size: 36px;
+    font-weight: bold;
+    color: #27ae60;
+    animation: bounce 1s infinite alternate;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.menu-card {
+    background-color: #333;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.menu-card img:hover {
+    transform: scale(1.1);
+}
+
+.menu-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.menu-card p {
+    color: #f1c40f;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
